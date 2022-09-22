@@ -98,7 +98,7 @@ h1 {
     transition: .3s;
 }
 
-@media (min-width: 751px) {
+@media screen and (min-width: 751px) {
 
     .container {
         max-width: 600px;
@@ -121,5 +121,21 @@ h1 {
 
     .box-text > p, .flex > p {
         margin-bottom: 20px;
+    }
+}
+
+/* Extra: Invertendo a ordem box-text / image */
+
+@media screen and (min-width: 992px) {
+
+    .image {
+        order: 1;
+    }
+
+    .image img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
